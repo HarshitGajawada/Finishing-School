@@ -50,7 +50,7 @@ class Node{
     }
 }
 
-public class D5_BinaryTree{
+public class D5_InPost{
     private static Node construct(int[] inOrd, int l1, int r1, int[] postOrd, int l2, int r2){
         if(l1>=r1|| l2>=r2){
             return null;
@@ -93,7 +93,7 @@ public class D5_BinaryTree{
         }
         return levels;
     }
-
+    
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();

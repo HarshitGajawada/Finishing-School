@@ -63,7 +63,7 @@ class Node{
     }
 }
 
-class Solution{
+public class D6_PrePost{
     private static Node construct(int[] preOrd, int[] postOrd, HashMap<Integer,Integer> pre, HashMap<Integer,Integer> post){
         int l1=preOrd.length;
         HashSet<Integer> vis=new HashSet<>();
