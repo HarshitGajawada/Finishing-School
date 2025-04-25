@@ -70,6 +70,7 @@ public class D6_PrePost{
         Node root=new Node(preOrd[0]);
         Queue<Node> q=new LinkedList<>();
         q.add(root);
+        vis.add(preOrd[0]);
         while(!q.isEmpty()){
             Node curr=q.poll();
             int preind=pre.get(curr.val);
@@ -84,7 +85,6 @@ public class D6_PrePost{
                 vis.add((postOrd[postind-1]));
                 q.add(curr.right);
             }
-            vis.add(preOrd[preind]);
         }
         return root;
     }
