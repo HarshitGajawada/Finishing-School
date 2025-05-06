@@ -81,5 +81,6 @@ public class D29_PhraseTurns {
             t.insert(s.substring(i));
         }
         System.out.println(t.cnt);
+        sc.close();
     }
 }

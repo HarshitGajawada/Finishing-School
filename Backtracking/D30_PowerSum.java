@@ -83,5 +83,6 @@ class Solution{
         int[] res=new int[1];
         backtrack(0,1,s,x,res);
         System.out.println(res[0]);
+        sc.close();
     }
 }

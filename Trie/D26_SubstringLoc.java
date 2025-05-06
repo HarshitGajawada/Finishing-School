@@ -74,7 +74,6 @@ class Trie{
             if(t.children[ind]==null){
                 t.children[ind]=new TrieNode();
             }
-            t
         }
         t.end=true;
     }

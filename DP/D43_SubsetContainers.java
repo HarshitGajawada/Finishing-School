@@ -101,6 +101,6 @@ public class D43_SubsetContainers {
         }
         System.out.println(dp[n][fl][ol]);
         // System.out.println(solve(0,containers,0,0,fl,ol,fcnts));
-        // sc.close();
+        sc.close();
     }
 }
