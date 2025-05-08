@@ -56,26 +56,24 @@ public class D44_WaterTrapping{
         int l=0;
         int r=n-1;
         int res=0;
-        int lmax=0;
-        int rmax=0;
+        int lmax=h[l];
+        int rmax=h[r];
         while(l<r){
-            if(h[l]<h[r]){
+            if(lmax<rmax){
+                l+=1;
                 if(h[l]>=lmax){
                     lmax=h[l];
                 }
-                else{
-                    res+=lmax-h[l];
-                }
-                l+=1;
+                res+=lmax-h[l];
+                
             }
             else{
+                r-=1;
                 if(h[r]>=rmax){
                     rmax=h[r];
                 }
-                else{
-                    res+=rmax-h[r];
-                }
-                r-=1;
+                res+=rmax-h[r];
+                
             }
         }
         System.out.println(res);
