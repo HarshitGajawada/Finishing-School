@@ -102,5 +102,6 @@ public class D53_SlotRefund {
             i=j;
         }
         System.out.println(res);
+        sc.close();
     }
 }
