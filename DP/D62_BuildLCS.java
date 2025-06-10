@@ -56,7 +56,7 @@ public class D62_BuildLCS {
                 }
             }
         }
-         StringBuilder lcs=new StringBuilder();
+        StringBuilder lcs=new StringBuilder();
         int i=m,j=n;
         while(i>0 && j>0){
             if(s1.charAt(i-1)==s2.charAt(j-1)){
