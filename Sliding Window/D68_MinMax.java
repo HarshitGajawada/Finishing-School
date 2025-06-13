@@ -38,7 +38,7 @@
 
 import java.util.*;
 
-public class D69_MinMax{
+public class D68_MinMax{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
