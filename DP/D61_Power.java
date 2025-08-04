@@ -65,7 +65,7 @@ public class D61_Power {
             for(int i=1;i<=n-len+1;i++){
                 int j=i+len-1;
                 for(int k=i;k<=j;k++){
-                    dp[i][j]=Math.max(dp[i][j],dp[i][k]+dp[k+1][j]+comps[i-1]*comps[k]*comps[j+1]);
+                    dp[i][j]=Math.max(dp[i][j],dp[i][k-1]+dp[k+1][j]+comps[i-1]*comps[k]*comps[j+1]);
                 }
             }
         }
