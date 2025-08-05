@@ -65,12 +65,6 @@ public class D73_BracesRev {
                 pair[i]=open;
             }
         }
-        int len=0;
-        for(int i=0;i<n;i++){
-            if(pair[i]==-1){
-                len+=1;
-            }
-        }
         // System.out.println(Arrays.toString(pair));
         // System.out.println(len);
         StringBuilder res=new StringBuilder("");
