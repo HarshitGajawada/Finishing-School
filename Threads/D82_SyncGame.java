@@ -119,7 +119,7 @@ class HiHelloGame {
     }
 }
 
-public class Solution {
+public class D82_SyncGame{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -165,8 +165,10 @@ public class Solution {
             t2.join();
             t3.join();
             t4.join();
-        } catch (InterruptedException e) {
+        } 
+        catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
+        sc.close();
     }
 }
